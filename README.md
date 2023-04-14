@@ -1,4 +1,4 @@
-# Getting Started with Create React 30 Apps 
+# Getting Started with React 30 Apps 
 
 ## By Khaled
 
