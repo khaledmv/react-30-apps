@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/Button';
 
 const RandomColor = () => {
 
@@ -18,10 +19,10 @@ const RandomColor = () => {
     }
   return (
     <div className='w-full h-screen flex justify-center items-center '>
-        <button 
-        className='bg-cyan-300 text-4xl text-white py-2 px-4 border-l-4 border-cyan-700 rounded-sm'
-        onClick={(e) => changeBg(e)}
-        > Change Color </button>
+        <Button changeBg={changeBg} classes={' bg-green-300 text-base rounded-sm border-l-4 mx-4 border-green-400'} />
+        <Button changeBg={changeBg} classes={' bg-green-400 text-base rounded-sm border-l-4 mx-4 border-green-600'} />
+        <Button changeBg={changeBg} classes={' bg-green-500 text-base rounded-sm border-l-4 mx-4 border-green-800'} />
+        <Button changeBg={changeBg} classes={' bg-green-600 text-base rounded-sm border-l-4 mx-4 border-green-900'} />
     </div>
   )
 }
