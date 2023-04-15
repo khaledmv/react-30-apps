@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Title({clasess, text}) {
+const Title = ({classes, text}) => {
   return (
-    <h1 className={!clasess ? 'title text-center' : clasess}> {!text ? "Title" : text } </h1>
+    <div className={!classes ? 'text-2xl' : classes}>{!text? 'This is title' : text }</div>
   )
 }
+
+export default Title
