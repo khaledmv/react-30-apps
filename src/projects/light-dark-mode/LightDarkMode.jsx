@@ -12,17 +12,18 @@ const LightDarkMode = () => {
     useEffect(() =>{
         switch(theme){
             case themes.light:
-            
-                    docBody.classList.remove("bg-gray-500");
-                    docBody.classList.add("bg-gray-200");
+                    docBody.classList.remove("bg-dark");
+                    docBody.classList.add("bg-light");
                 break;
+
             case themes.dark:
-                docBody.classList.remove("bg-gray-200");
-                docBody.classList.add("bg-gray-500");
+                docBody.classList.remove("bg-light");
+                docBody.classList.add("bg-dark");
                 break;  
+                
             default:
-                docBody.classList.remove("bg-gray-500");
-                docBody.classList.add("bg-gray-200");
+                docBody.classList.remove("bg-dark");
+                docBody.classList.add("bg-light");
                 break;
 
         }
