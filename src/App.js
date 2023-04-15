@@ -1,13 +1,14 @@
 
 import './App.css';
-import LightDarkMode from './projects/light-dark-mode/LightDarkMode';
+import RandomColor from './projects/random-color/RandomColor';
+
 
 
 
 function App() {
   return (
     <div>
-        <LightDarkMode/>
+        <RandomColor/>
     </div>
   );
 }
